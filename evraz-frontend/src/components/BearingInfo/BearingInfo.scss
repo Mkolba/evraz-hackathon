@@ -1,0 +1,45 @@
+.BearingInfo {
+  padding: 2px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+
+  .BearingIcons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
+    align-items: center;
+
+    .BearingIcon {
+      border: 1px solid #CCCCCC;
+      background-color: #F4F4F4;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 600;
+      border-radius: 4px;
+      padding: 0 4px;
+      min-width: 38px;
+
+      &:is(.warning) {
+        border: 1px solid #F69112;
+        background-color: #FEF1DB;
+        svg {
+          stroke: #F69112;
+        }
+      }
+
+      &:is(.error) {
+        border: 1px solid #EB5835;
+        background-color: #FCDBCB;
+        svg {
+          stroke: #EB5835;
+        }
+      }
+    }
+  }
+}

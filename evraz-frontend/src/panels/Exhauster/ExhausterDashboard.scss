@@ -1,0 +1,151 @@
+.ExhausterDashboard {
+  overflow: hidden;
+
+  .ExhausterDashboardLastUpdate {
+    position: absolute;
+    top: 86px;
+    left: 48px;
+  }
+
+  .BearingContent {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+
+    .BearingContentItem {
+      height: 18px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      font-weight: 500;
+      font-size: 12px;
+      border-radius: 4px;
+      padding: 0 2px;
+
+      .ItemText {
+        font-weight: 300;
+      }
+
+      &:is(.warning) {
+        background-color: #FAB82E;
+      }
+
+      &:is(.error) {
+        background-color: #e32112;
+      }
+    }
+  }
+
+  .WaterTemp {
+    position: absolute;
+    font-size: 11px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    span {
+      font-weight: 400;
+    }
+  }
+
+  .GasTempData {
+    position: absolute;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    .Text {
+      margin-top: -4px;
+      font-size: 10px;
+      font-weight: 400;
+    }
+  }
+
+  .OilLevelData {
+    position: absolute;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    .Text {
+      position: absolute;
+      font-size: 10px;
+      font-weight: 400;
+      top: 17px;
+      left: 4px;
+
+      span {
+        text-transform: lowercase;
+      }
+    }
+
+    .Value {
+      position: absolute;
+      top: 2px;
+      left: 3px;
+    }
+
+    .OilLevelIndicator {
+      position: relative;
+      top: 5px;
+      height: 26px;
+      min-width: 6px;
+      max-width: 100%;
+      background-color: white;
+      z-index: 0;
+    }
+  }
+
+    .OilPressureData {
+      position: absolute;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 14px;
+
+      .Text {
+        position: absolute;
+        font-size: 10px;
+        font-weight: 400;
+        top: 17px;
+        left: 4px;
+
+        span {
+          text-transform: lowercase;
+        }
+      }
+
+      .Value {
+        position: absolute;
+        top: 2px;
+        left: 3px;
+      }
+
+      .OilPressureIndicator {
+        position: relative;
+        top: 5px;
+        height: 28px;
+        min-width: 6px;
+        max-width: 100%;
+        background-color: white;
+        z-index: 0;
+      }
+  }
+
+  .GasDischargeData {
+    text-align: center;
+    position: absolute;
+    font-weight: 500;
+    font-size: 10px;
+    color: white;
+  }
+
+  .ValveIndicator {
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}

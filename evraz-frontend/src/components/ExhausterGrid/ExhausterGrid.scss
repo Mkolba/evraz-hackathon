@@ -1,0 +1,141 @@
+.ExhausterGrid {
+  padding: 1px;
+  padding-top: 12px;
+
+  .ExhausterContainer {
+    max-width: 288px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px #E5E5E5;
+
+    .ExhausterHeader {
+      padding: 0 14px;
+      background-color: #6E6E6D;
+      color: white;
+      font-size: 14px;
+      height: 40px;
+      display: flex;
+      font-weight: 500;
+      justify-content: space-between;
+      align-items: center;
+
+      .Container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 14px;
+
+        .StatusIndicator {
+          height: 10px;
+          width: 10px;
+          background-color: #6EA566;
+          border-radius: 50%;
+
+          &:is(.offline) {
+            background-color: #E32112;
+          }
+        }
+      }
+
+      .Button {
+        width: 24px;
+        height: 24px;
+        background-color: #FAFAFA;
+        border-radius: 6px;
+        border: 1px solid #EAEAEA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          background-color: #d3d2d2;
+          border: 1px solid #d3d2d2;
+          transition: 0.2s;
+        }
+      }
+    }
+
+    .Rotor {
+      padding: 0 10px;
+
+      .RotorData {
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #F4F4F4;
+
+        .RotorTitle {
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+        .RotorDate {
+          border-radius: 6px;
+          padding: 0 6px;
+          background-color: #F4F4F4;
+          font-size: 12px;
+          font-weight: 500;
+        }
+
+        .RotorEditButton {
+          font-size: 10px;
+          color: #8E4D9B;
+          border-bottom: 1px dotted #8E4D9B;
+        }
+      }
+
+      .RotorStatus {
+        padding: 6px 0;
+
+        .RotorStatusHeader {
+          font-size: 11px;
+          font-weight: 600;
+          padding-left: 6px;
+        }
+
+        .RotorStatusContainer {
+          border-radius: 6px;
+          padding: 2px 6px;
+          background-color: #FAFAFA;
+          margin-top: 6px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 16px;
+
+          .RotorUptime {
+            border-radius: 6px;
+            padding: 2px 16px;
+            background-color: #F4F4F4;
+            font-weight: 600;
+          }
+
+          .RotorPrediction {
+            font-weight: 600;
+            opacity: 0.8;
+
+            .RotorPredictionHeader {
+              font-size: 11px;
+              font-weight: 500;
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+
+      .RotorImage {
+        svg {
+          max-width: 100%;
+        }
+      }
+      .BearingsAccordion {
+        padding-bottom: 6px;
+        .Control .mantine-Accordion-label {
+          font-size: 14px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

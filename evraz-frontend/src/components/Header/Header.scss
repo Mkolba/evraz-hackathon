@@ -1,0 +1,35 @@
+.MainHeader {
+  .Logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .Container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 64px;
+    align-items: center;
+    height: 100%;
+    margin: 0 32px;
+    max-width: 100%;
+  }
+
+  .Breadcrumbs {
+    .Anchor {
+      color: black;
+      opacity: 0.6;
+
+      &:last-child {
+        font-weight: 600;
+        opacity: 1;
+
+        &:hover {
+          text-decoration: none;
+          pointer-events: none;
+          cursor: default;
+        }
+      }
+    }
+  }
+}

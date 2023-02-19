@@ -1,0 +1,19 @@
+.AgloGrid {
+  .AgloContainer {
+    max-width: 586px;
+    overflow: hidden;
+    border-radius: 10px;
+
+    .AgloHeader {
+      background-color: #F4F4F4;
+      color: #6E6E6D;
+      font-size: 14px;
+      height: 40px;
+      padding: 0 12px;
+      display: flex;
+      font-weight: 500;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+}
